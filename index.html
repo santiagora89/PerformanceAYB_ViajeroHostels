@@ -366,7 +366,18 @@ td.gs{border-left:2px solid var(--g3);}
   <div id="p2Country"><div style="color:var(--g4);padding:20px">Cargando...</div></div>
 
   <div class="sec-ttl">Top &amp; Less Performers</div>
-  <div style="margin-bottom:12px;display:flex;align-items:center;gap:10px">
+  <div style="margin-bottom:10px">
+    <div class="rank-tabs" id="rankTabs">
+      <button class="rank-tab-btn active" onclick="setRankInd('ayb',this)">AyB Total</button>
+      <button class="rank-tab-btn" onclick="setRankInd('ticket',this)">Ticket NC</button>
+      <button class="rank-tab-btn" onclick="setRankInd('capture',this)">Capture Rate Dsy</button>
+      <button class="rank-tab-btn" onclick="setRankInd('foodcost',this)">Food Cost</button>
+      <button class="rank-tab-btn" onclick="setRankInd('laborcost',this)">Labor Cost</button>
+      <button class="rank-tab-btn" onclick="setRankInd('rentabilidad',this)">Rentabilidad</button>
+      <button class="rank-tab-btn" onclick="setRankInd('revinate',this)">Revinate</button>
+    </div>
+  </div>
+  <div style="margin-bottom:10px;display:flex;align-items:center;gap:10px">
     <div style="font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--g4);font-weight:700;white-space:nowrap">Filtrar por</div>
     <div id="rankScopeFilter"></div>
   </div>
